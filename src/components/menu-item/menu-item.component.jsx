@@ -3,9 +3,6 @@ import './menu-item.styles.css'
 
 import { withRouter } from 'react-router-dom'
 
-
-// ============== withRouter alternative =============
-
 const MenuItem = ({ title, imageUrl, size, history, match, linkUrl }) => {
  
   return (

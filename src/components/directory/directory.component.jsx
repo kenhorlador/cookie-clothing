@@ -1,6 +1,8 @@
 import React from 'react'
+
 // Styles
 import './directory.styles.css'
+
 // Component
 import MenuItem from '../menu-item/menu-item.component'
 
