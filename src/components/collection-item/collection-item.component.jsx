@@ -2,7 +2,7 @@
 // Styles
 import './collection-item.styles.css'
 
-const CollectionItem = ({ id, name, price, imageUrl }) => {
+const CollectionItem = ({ name, price, imageUrl }) => {
   return (
     <div className="collection-item">
       <div 

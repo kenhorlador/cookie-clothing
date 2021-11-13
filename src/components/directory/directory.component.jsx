@@ -1,3 +1,4 @@
+// Main Component
 import React from 'react'
 
 // Styles
@@ -43,8 +44,7 @@ class Directory extends React.Component {
           id: 5,
           linkUrl: 'shop/mens'
         }
-      ]
-      
+      ]   
     }
   }
 
