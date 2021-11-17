@@ -1,11 +1,11 @@
-// Main Component
+// Packages
 import React from 'react'
-
-// Styles
-import './directory.styles.css'
 
 // Component
 import MenuItem from '../menu-item/menu-item.component'
+
+// Styles
+import './directory.styles.css'
 
 class Directory extends React.Component {
   constructor() {
@@ -53,7 +53,7 @@ class Directory extends React.Component {
       <div className="directory-menu">
         {
           this.state.sections.map(({ id, ...otherSectionProps }) => (
-            <MenuItem key={ id } { ...otherSectionProps } />
+            <MenuItem key={ id } { ...otherSectionProps } /> // shorter version of destructuring all the keys in "sections"
           ))
         }
       </div>

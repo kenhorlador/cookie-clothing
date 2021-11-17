@@ -1,4 +1,3 @@
-
 // Styles
 import './collection-item.styles.css'
 

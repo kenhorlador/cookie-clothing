@@ -1,5 +1,6 @@
 // Packages
 import React from 'react'
+import {signInWithGoogle} from '../../firebase/firebase.utils.js'
 
 // Components
 import FormInput from '../form-input/form-input.component'
@@ -17,6 +18,22 @@ class SignIn extends React.Component {
       password: ''
     }
   }
+
+  // Alternative Firebase Authentication  // User Auth
+  /*
+  signInWithGoogle = () => {
+    const googleProvider = new firebase.auth.GoogleAuthProvider()
+    firebase.auth().signInWithPopup(googleProvider)
+    .then((re) => {
+      console.log(re)
+    })
+
+    .catch((err) => {
+      console.log(err)
+    })
+
+  }
+  */
 
   handleSubmit = event => {
       event.preventDefault()
@@ -53,7 +70,10 @@ class SignIn extends React.Component {
             label="Password"
             required 
             />
-          <CustomButton type='submit' children='Sign In' />
+          <div className='buttons'>
+            <CustomButton type='submit' children='Sign In' />
+            <CustomButton onClick={ signInWithGoogle } children='Sign In with Google' isGoogleSignIn />
+          </div>
         </form>
       </div>
     )

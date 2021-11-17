@@ -1,8 +1,8 @@
+// Packages
+import { withRouter } from 'react-router-dom'
+
 // Styles
 import './menu-item.styles.css'
-
-// React router dom
-import { withRouter } from 'react-router-dom'
 
 const MenuItem = ({ title, imageUrl, size, history, match, linkUrl }) => {
  

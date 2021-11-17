@@ -1,10 +1,13 @@
+// Packages
 import React from 'react'
+
+// Data
 import SHOP_DATA from './shop.data'
 
 // Components
 import CollectionPreview from '../../components/collection-preview/collection-preview.component'
 
-export default class ShopPage extends React.Component {
+class ShopPage extends React.Component {
   constructor(props) {
     super(props)
 
@@ -28,3 +31,5 @@ export default class ShopPage extends React.Component {
     )
   }
 }
+
+export default ShopPage
