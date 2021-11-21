@@ -4,11 +4,24 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 25px;
+  color: black;
 
   .logo-container {
     height: 100%;
-    width: 70px;
-    padding: 25px;
+    width: 15px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+
+    .logo-heading {
+      display: flex;
+      align-items: center;
+      color: black;
+    }
+
+    .logo {
+      height: 45px;
+    }
   }
 
   .options {
@@ -21,6 +34,8 @@
     .option {
       padding: 10px 15px;
       cursor: pointer;
+
+      color: inherit;
     }
   }
 }

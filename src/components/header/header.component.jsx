@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 import { auth } from '../../firebase/firebase.utils'
 
 // Assets
-import { ReactComponent as Logo } from '../../assets/crown.svg'
+import logo from '../../assets/logo.png'
 
 // Styles
 import './header.styles.css'
@@ -14,7 +14,8 @@ const Header = ({ currentUser }) => {
   return (
     <div className="header">
       <Link className="logo-container" to="/">
-        <Logo className="logo" />
+        <img src={ logo } alt="logo" className="logo" />
+        <h3 className="logo-heading">Cookie Clothing</h3>
       </Link>
       <div className='options'>
         <Link className="option" to="/shop">
